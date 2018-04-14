@@ -1,6 +1,7 @@
 App = {
     web3Provider: null,
     contracts: {},
+    Project: null,
 
     init: function () {
         // Load pets.
@@ -37,59 +38,62 @@ App = {
 
     initContract: function () {
 // 加载Adoption.json，保存了Adoption的ABI（接口说明）信息及部署后的网络(地址)信息，它在编译合约的时候生成ABI，在部署的时候追加网络信息
-        $.getJSON('Adoption.json', function (AdoptionArtifact) {
+        $.getJSON('Project.json', function (ProjectArtifact) {
 // 用Adoption.json数据创建一个可交互的TruffleContract合约实例。
-            App.contracts.Adoption = TruffleContract(AdoptionArtifact)
+            App.contracts.Project = web3.eth.contract(ProjectArtifact)
+            // App.contracts.Adoption = TruffleContract(AdoptionArtifact)
 // Set the provider for our contract
-            App.contracts.Adoption.setProvider(App.web3Provider)
+            App.contracts.Project.setProvider(App.web3Provider)
 // Use our contract to retrieve and mark the adopted pets
-            return App.markAdopted()
+//             return App.markAdopted()
         })
         return App.bindEvents()
     },
 
     bindEvents: function () {
-        $(document).on('click', '.btn-adopt', App.handleAdopt)
+        $(document).on('click', '.btn-adopt', App.handleBranch)
     },
 
-    markAdopted: function (adopters, account) {
-        let adoptionInstance
-        App.contracts.Adoption.deployed().then(function (instance) {
-            adoptionInstance = instance
-// 调用合约的getAdopters(), 用call读取信息不用消耗gas
-            return adoptionInstance.getAdopters.call()
-        }).then(function (adopters) {
-            for (let i = 0; i < adopters.length; i++) {
-                if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
-                    $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true)
-                }
-            }
-        }).catch(function (err) {
-            console.log(err.message)
-        })
+//     markAdopted: function (adopters, account) {
+//         let adoptionInstance
+//         App.contracts.Adoption.deployed().then(function (instance) {
+//             adoptionInstance = instance
+// // 调用合约的getAdopters(), 用call读取信息不用消耗gas
+//             return adoptionInstance.getAdopters.call()
+//         }).then(function (adopters) {
+//             for (let i = 0; i < adopters.length; i++) {
+//                 if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
+//                     $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true)
+//                 }
+//             }
+//         }).catch(function (err) {
+//             console.log(err.message)
+//         })
+//
+//     },
 
-    },
-
-    handleAdopt: function (event) {
+    handleBranch: function (event) {
         event.preventDefault()
 
-        const petId = parseInt($(event.target).data('id'))
-        let adoptionInstance
+        const id = parseInt($(event.target).data('id'))
+        location.href = `/edit.html?parent=${id}`
 // 获取用户账号
-        web3.eth.getAccounts(function (error, accounts) {
+//         web3.eth.getAccounts(function (error, accounts) {
+//             if (error) {
+//                 console.log(error)
+//             }
+//             const account = accounts[0]// 用第一个账号领养
+        // })
+    },
+    save: function (project) {
+        App.contracts.Project.new(project, function (error, instance) {
             if (error) {
-                console.log(error)
+                console.error(error)
             }
-            const account = accounts[0]// 用第一个账号领养
-            App.contracts.Adoption.deployed().then(function (instance) {
-                adoptionInstance = instance
 // 发送交易领养宠物
-                return adoptionInstance.adopt(petId, {from: account})
-            }).then(function (result) {
-                return App.markAdopted()
-            }).catch(function (err) {
-                console.log(err.message)
-            })
+            return instance
+        }).catch(function (err) {
+            console.log(err.message)
         })
     }
 
