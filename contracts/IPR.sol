@@ -19,7 +19,7 @@ contract IPR {
         return users;
     }
     // 返回项目列表
-    function getProjects() public view returns (address[16]) {
+    function getProjects() public view returns () {
         return projects;
     }
 }
