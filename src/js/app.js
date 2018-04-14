@@ -59,7 +59,7 @@ App = {
 // 调用合约的getAdopters(), 用call读取信息不用消耗gas
             return adoptionInstance.getAdopters.call()
         }).then(function (adopters) {
-            for (i = 0; i < adopters.length; i++) {
+            for (let i = 0; i < adopters.length; i++) {
                 if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
                     $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true)
                 }
