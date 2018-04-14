@@ -23,4 +23,7 @@ contract IPR {
     function getProjects() public view returns () {
         return projects;
     }
+    function saveProject(Project project) public returns (project) {
+        return project;
+    }
 }
