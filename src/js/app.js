@@ -40,7 +40,7 @@ App = {
 // 加载Adoption.json，保存了Adoption的ABI（接口说明）信息及部署后的网络(地址)信息，它在编译合约的时候生成ABI，在部署的时候追加网络信息
         $.getJSON('Project.json', function (ProjectArtifact) {
 // 用Adoption.json数据创建一个可交互的TruffleContract合约实例。
-            App.contracts.Project = web3.eth.contract(ProjectArtifact)
+            App.contracts.Project = web3.eth.contract(ProjectArtifact.abi)
             // App.contracts.Adoption = TruffleContract(AdoptionArtifact)
 // Set the provider for our contract
 //             App.contracts.Project.setProvider(App.web3Provider)
@@ -52,6 +52,7 @@ App = {
 
     bindEvents: function () {
         $(document).on('click', '.btn-adopt', App.handleBranch)
+        $('#project').submit(App.save)
     },
 
 //     markAdopted: function (adopters, account) {
@@ -85,15 +86,20 @@ App = {
 //             const account = accounts[0]// 用第一个账号领养
         // })
     },
-    save: function (project) {
+    save: function (e) {
+        e.preventDefault()
+        const form = $('#project')
+        const searchParams = new URLSearchParams(window.location.search)
+        const project = {
+            name: form.find('#name').val(),
+            desc: form.find('#desc').val(),
+            parentId: searchParams.get('parent')
+        }
         App.contracts.Project.new(project, function (error, instance) {
             if (error) {
                 console.error(error)
             }
-// 发送交易领养宠物
             return instance
-        }).catch(function (err) {
-            console.log(err.message)
         })
     }
 
