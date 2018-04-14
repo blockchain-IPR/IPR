@@ -20,7 +20,7 @@ App = {
                 petsRow.append(petTemplate.html())
             }
         })
-
+        $('nav').load('nav.html')
         return App.initWeb3()
     },
 
@@ -43,7 +43,7 @@ App = {
             App.contracts.Project = web3.eth.contract(ProjectArtifact)
             // App.contracts.Adoption = TruffleContract(AdoptionArtifact)
 // Set the provider for our contract
-            App.contracts.Project.setProvider(App.web3Provider)
+//             App.contracts.Project.setProvider(App.web3Provider)
 // Use our contract to retrieve and mark the adopted pets
 //             return App.markAdopted()
         })
