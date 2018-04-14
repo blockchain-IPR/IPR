@@ -1,7 +1,6 @@
 App = {
     web3Provider: null,
     contracts: {},
-    Project: null,
 
     init: function () {
         // Load pets.
@@ -38,14 +37,14 @@ App = {
 
     initContract: function () {
 // 加载Adoption.json，保存了Adoption的ABI（接口说明）信息及部署后的网络(地址)信息，它在编译合约的时候生成ABI，在部署的时候追加网络信息
-        $.getJSON('Project.json', function (ProjectArtifact) {
-// 用Adoption.json数据创建一个可交互的TruffleContract合约实例。
-            App.contracts.Project = web3.eth.contract(ProjectArtifact.abi)
-            // App.contracts.Adoption = TruffleContract(AdoptionArtifact)
+        $.getJSON('IPR.json', function (IPRArtifact) {
+// new合约太贵
+//             App.contracts.Project = web3.eth.contract(ProjectArtifact.abi)
+            App.contracts.IPR = TruffleContract(IPRArtifact)
 // Set the provider for our contract
-//             App.contracts.Project.setProvider(App.web3Provider)
+            App.contracts.IPR.setProvider(App.web3Provider)
 // Use our contract to retrieve and mark the adopted pets
-//             return App.markAdopted()
+            return App.getProjects()
         })
         return App.bindEvents()
     },
@@ -55,7 +54,8 @@ App = {
         $('#project').submit(App.save)
     },
 
-//     markAdopted: function (adopters, account) {
+    getProjects: function (adopters, account) {
+        console.log('GetProject is not implement. TODO')//TODO
 //         let adoptionInstance
 //         App.contracts.Adoption.deployed().then(function (instance) {
 //             adoptionInstance = instance
@@ -71,7 +71,7 @@ App = {
 //             console.log(err.message)
 //         })
 //
-//     },
+    },
 
     handleBranch: function (event) {
         event.preventDefault()
@@ -95,11 +95,12 @@ App = {
             desc: form.find('#desc').val(),
             parentId: searchParams.get('parent')
         }
-        App.contracts.Project.new(project, function (error, instance) {
-            if (error) {
-                console.error(error)
-            }
-            return instance
+        App.contracts.IPR.deployed().then(function (instance) {
+            return instance.saveProject(project)
+        }).then(function (result) {
+            return App.getProjects()
+        }).catch(function (err) {
+            console.error(err)
         })
     }
 
