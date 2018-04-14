@@ -10,6 +10,11 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    .item{
+        margin-bottom: 5px;
+    }
+    </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,22 +26,110 @@
 
 <body>
     <div class="container">
+
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-push-2">
                 <h1 class="text-center">知识产权保护
+                        <a class="btn btn-default" href="/"> 首页 </a>
                 </h1>
                 <hr/>
                 <br/>
             </div>
         </div>
 
-        <div class="row">
-            
+        <div class="row ">
+            <div class="col-md-8 col-sm-12 col-md-offset-2">
+
+                <div class="page-header">
+                    <h1>家政服务
+                        <small>王大锤</small>
+                    </h1>
+                </div>
+                <div class="page-detail">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">项目介绍</h3>
+                        </div>
+                        <div class="panel-body">
+
+                            家政服务平台，提供最优质的一对一家政服务。
+                            <br /> 场景1: 好评 假设 存在钟点工小王 假设 小王评价分为-3 当 我好评小王 那么 小王的评价得分位-2
+
+
+                            <br/> 场景2: 差评 假设 存在钟点工小王 假设 小王评价分为-3 当 我差评小王 那么 小王的评价得分位-4
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">项目依赖</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="mountNode"></div>
+                            </div>
+                        </div>
+                    <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">历史收益</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="item">
+                                        <span class="label label-success">2018-03-01 10:23:21</span>张三 投入资金 100 
+                                </div>
+                                
+                                <div class="item">
+                                        <span class="label label-success">2018-03-01 10:23:21</span>张三 投入资金 100 
+                                </div>
+                                <div class="item">
+                                        <span class="label label-success">2018-03-01 10:23:21</span>张三 投入资金 100 
+                                </div>
+                                <div class="item">
+                                        <span class="label label-success">2018-03-01 10:23:21</span>张三 投入资金 100 
+                                </div>
+                                <div class="item">
+                                        <span class="label label-success">2018-03-01 10:23:21</span>张三 投入资金 100 
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
+
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-</body>
+    <script src="https://gw.alipayobjects.com/os/antv/assets/g6/1.2.8/g6.min.js"></script>
+    <script src="https://gw.alipayobjects.com/os/antv/assets/g6-plugins/1.0.9/g6-plugins.min.js"></script>
+    <script src="https://gw.alipayobjects.com/os/antv/assets/lib/d3-4.13.0.min.js"></script>
 
+</body>
+<script type="text/javascript">
+    $.getJSON('/childrendata.json', data => {
+      const tree = new G6.Tree({
+        id: 'mountNode',            // 容器ID
+        height: window.innerHeight,         // 画布高
+        fitView: 'autoZoom', // 自动缩放
+        layoutCfg: {
+          // direction: 'LR', // 方向（LR/RL/H/TB/BT/V）
+          getHGap: function(/* d */) { // 横向间距
+            return 100;
+          },
+          getVGap: function(/* d */) { // 竖向间距
+            return 10;
+          },
+        },
+      });
+      tree.source(data);
+      tree.node()
+        .label(function (obj) {
+        return obj.name;
+      })
+        .style({
+        fillOpacity: 1
+      });
+      tree.edge().shape('smooth');
+      tree.render();
+    });
+    </script>
 </html>
