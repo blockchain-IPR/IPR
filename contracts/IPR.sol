@@ -20,10 +20,10 @@ contract IPR {
         return users;
     }
     // 返回项目列表
-    function getProjects() public view returns (Project[]) {
-        return projects;
+    function getProjects() public view returns (string) {
+        return '[]';
     }
-    function saveProject(Project project) public returns (uint) {
+    function saveProject(string project) public returns (uint) {
         return 0;
     }
 }
