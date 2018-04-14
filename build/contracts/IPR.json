@@ -106,8 +106,8 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b6105ce8061001e6000396000f300606060405260043610610077576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168062ce8e3e1461007c5780630bc3545b146100e6578063107046bd146101335780631c13c0f414610196578063365b98b2146101cd578063dcc6012814610230575b600080fd5b341561008757600080fd5b61008f61029a565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b838110156100d25780820151818401526020810190506100b7565b505050509050019250505060405180910390f35b34156100f157600080fd5b61011d600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061032e565b6040518082815260200191505060405180910390f35b341561013e57600080fd5b6101546004808035906020019091905050610398565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101a157600080fd5b6101b760048080359060200190919050506103d7565b6040518082815260200191505060405180910390f35b34156101d857600080fd5b6101ee6004808035906020019091905050610456565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561023b57600080fd5b610243610495565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b8381101561028657808201518184015260208101905061026b565b505050509050019250505060405180910390f35b6102a2610529565b600180548060200260200160405190810160405280929190818152602001828054801561032457602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190600101908083116102da575b5050505050905090565b6000808054806001018281610343919061053d565b9160005260206000209001600084909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055509050919050565b6000818154811015156103a757fe5b90600052602060002090016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008082101580156103ea5750600f8211155b15156103f557600080fd5b3360018381548110151561040557fe5b906000526020600020900160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550819050919050565b60018181548110151561046557fe5b90600052602060002090016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b61049d610569565b600080548060200260200160405190810160405280929190818152602001828054801561051f57602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190600101908083116104d5575b5050505050905090565b602060405190810160405280600081525090565b81548183558181151161056457818360005260206000209182019101610563919061057d565b5b505050565b602060405190810160405280600081525090565b61059f91905b8082111561059b576000816000905550600101610583565b5090565b905600a165627a7a72305820a3ce3a2cabb7f6719768e4089d6b5cd62338c0cb0a8f710f33438ded80ad0c170029",
-  "deployedBytecode": "0x606060405260043610610077576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168062ce8e3e1461007c5780630bc3545b146100e6578063107046bd146101335780631c13c0f414610196578063365b98b2146101cd578063dcc6012814610230575b600080fd5b341561008757600080fd5b61008f61029a565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b838110156100d25780820151818401526020810190506100b7565b505050509050019250505060405180910390f35b34156100f157600080fd5b61011d600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061032e565b6040518082815260200191505060405180910390f35b341561013e57600080fd5b6101546004808035906020019091905050610398565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101a157600080fd5b6101b760048080359060200190919050506103d7565b6040518082815260200191505060405180910390f35b34156101d857600080fd5b6101ee6004808035906020019091905050610456565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561023b57600080fd5b610243610495565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b8381101561028657808201518184015260208101905061026b565b505050509050019250505060405180910390f35b6102a2610529565b600180548060200260200160405190810160405280929190818152602001828054801561032457602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190600101908083116102da575b5050505050905090565b6000808054806001018281610343919061053d565b9160005260206000209001600084909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055509050919050565b6000818154811015156103a757fe5b90600052602060002090016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008082101580156103ea5750600f8211155b15156103f557600080fd5b3360018381548110151561040557fe5b906000526020600020900160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550819050919050565b60018181548110151561046557fe5b90600052602060002090016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b61049d610569565b600080548060200260200160405190810160405280929190818152602001828054801561051f57602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190600101908083116104d5575b5050505050905090565b602060405190810160405280600081525090565b81548183558181151161056457818360005260206000209182019101610563919061057d565b5b505050565b602060405190810160405280600081525090565b61059f91905b8082111561059b576000816000905550600101610583565b5090565b905600a165627a7a72305820a3ce3a2cabb7f6719768e4089d6b5cd62338c0cb0a8f710f33438ded80ad0c170029",
+  "bytecode": "0x6060604052341561000f57600080fd5b6105ce8061001e6000396000f300606060405260043610610077576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168062ce8e3e1461007c5780630bc3545b146100e6578063107046bd146101335780631c13c0f414610196578063365b98b2146101cd578063dcc6012814610230575b600080fd5b341561008757600080fd5b61008f61029a565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b838110156100d25780820151818401526020810190506100b7565b505050509050019250505060405180910390f35b34156100f157600080fd5b61011d600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061032e565b6040518082815260200191505060405180910390f35b341561013e57600080fd5b6101546004808035906020019091905050610398565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101a157600080fd5b6101b760048080359060200190919050506103d7565b6040518082815260200191505060405180910390f35b34156101d857600080fd5b6101ee6004808035906020019091905050610456565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561023b57600080fd5b610243610495565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b8381101561028657808201518184015260208101905061026b565b505050509050019250505060405180910390f35b6102a2610529565b600180548060200260200160405190810160405280929190818152602001828054801561032457602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190600101908083116102da575b5050505050905090565b6000808054806001018281610343919061053d565b9160005260206000209001600084909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055509050919050565b6000818154811015156103a757fe5b90600052602060002090016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008082101580156103ea5750600f8211155b15156103f557600080fd5b3360018381548110151561040557fe5b906000526020600020900160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550819050919050565b60018181548110151561046557fe5b90600052602060002090016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b61049d610569565b600080548060200260200160405190810160405280929190818152602001828054801561051f57602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190600101908083116104d5575b5050505050905090565b602060405190810160405280600081525090565b81548183558181151161056457818360005260206000209182019101610563919061057d565b5b505050565b602060405190810160405280600081525090565b61059f91905b8082111561059b576000816000905550600101610583565b5090565b905600a165627a7a72305820f4b7ffef8ada3ed05ac3f828beaeb0428408cfb8418ca7e06b7a64761471ffe00029",
+  "deployedBytecode": "0x606060405260043610610077576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168062ce8e3e1461007c5780630bc3545b146100e6578063107046bd146101335780631c13c0f414610196578063365b98b2146101cd578063dcc6012814610230575b600080fd5b341561008757600080fd5b61008f61029a565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b838110156100d25780820151818401526020810190506100b7565b505050509050019250505060405180910390f35b34156100f157600080fd5b61011d600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061032e565b6040518082815260200191505060405180910390f35b341561013e57600080fd5b6101546004808035906020019091905050610398565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101a157600080fd5b6101b760048080359060200190919050506103d7565b6040518082815260200191505060405180910390f35b34156101d857600080fd5b6101ee6004808035906020019091905050610456565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561023b57600080fd5b610243610495565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b8381101561028657808201518184015260208101905061026b565b505050509050019250505060405180910390f35b6102a2610529565b600180548060200260200160405190810160405280929190818152602001828054801561032457602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190600101908083116102da575b5050505050905090565b6000808054806001018281610343919061053d565b9160005260206000209001600084909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055509050919050565b6000818154811015156103a757fe5b90600052602060002090016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008082101580156103ea5750600f8211155b15156103f557600080fd5b3360018381548110151561040557fe5b906000526020600020900160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550819050919050565b60018181548110151561046557fe5b90600052602060002090016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b61049d610569565b600080548060200260200160405190810160405280929190818152602001828054801561051f57602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190600101908083116104d5575b5050505050905090565b602060405190810160405280600081525090565b81548183558181151161056457818360005260206000209182019101610563919061057d565b5b505050565b602060405190810160405280600081525090565b61059f91905b8082111561059b576000816000905550600101610583565b5090565b905600a165627a7a72305820f4b7ffef8ada3ed05ac3f828beaeb0428408cfb8418ca7e06b7a64761471ffe00029",
   "sourceMap": "55:761:0:-;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "55:761:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;492:83;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;492:83:0;;;;;;;;;;;;;;;;;705:108;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;207:25;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;283:182;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;239:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;608:89;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;608:89:0;;;;;;;;;;;;;;;;;492:83;533:9;;:::i;:::-;562:5;555:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;492:83;:::o;705:108::-;759:4;783:8;:22;;;;;;;;;;;:::i;:::-;;;;;;;;;;797:7;783:22;;;;;;;;;;;;;;;;;;;;;;776:29;;705:108;;;:::o;207:25::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;283:182::-;331:4;369:1;356:9;:14;;:33;;;;;387:2;374:9;:15;;356:33;348:42;;;;;;;;420:10;401:5;407:9;401:16;;;;;;;;;;;;;;;;;;;:29;;;;;;;;;;;;;;;;;;448:9;441:16;;283:182;;;:::o;239:22::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;608:89::-;652:9;;:::i;:::-;681:8;674:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;608:89;:::o;55:761::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.4.17;\r\n\r\nimport \"./Project.sol\";\r\n\r\ncontract IPR {\r\n    //    struct Project {\r\n    //        string name;\r\n    //        string desc;\r\n    //        uint32 timestamp;\r\n    //    }\r\n\r\n    Project[] public projects;\r\n    address[] public users;\r\n    // 分支\r\n    function branch(uint projectId) public returns (uint) {\r\n        require(projectId >= 0 && projectId <= 15);\r\n        users[projectId] = msg.sender;\r\n        return projectId;\r\n    }\r\n    // 返回用户\r\n    function getUsers() public view returns (address[]) {\r\n        return users;\r\n    }\r\n    // 返回项目列表\r\n    function getProjects() public view returns (Project[]) {\r\n        return projects;\r\n    }\r\n\r\n    function saveProject(Project project) public returns (uint) {\r\n        return projects.push(project);\r\n    }\r\n}",
@@ -139,7 +139,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 68,
-        "sourceUnit": 75,
+        "sourceUnit": 131,
         "src": "28:23:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -167,7 +167,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_contract$_Project_$74_$dyn_storage",
+              "typeIdentifier": "t_array$_t_contract$_Project_$130_$dyn_storage",
               "typeString": "contract Project[] storage ref"
             },
             "typeName": {
@@ -176,10 +176,10 @@
                 "id": 3,
                 "name": "Project",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 74,
+                "referencedDeclaration": 130,
                 "src": "207:7:0",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_contract$_Project_$74",
+                  "typeIdentifier": "t_contract$_Project_$130",
                   "typeString": "contract Project"
                 }
               },
@@ -188,7 +188,7 @@
               "nodeType": "ArrayTypeName",
               "src": "207:9:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_contract$_Project_$74_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_contract$_Project_$130_$dyn_storage_ptr",
                 "typeString": "contract Project[] storage pointer"
               }
             },
@@ -372,7 +372,7 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 90,
+                      "referencedDeclaration": 146,
                       "src": "348:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -455,7 +455,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 87,
+                        "referencedDeclaration": 143,
                         "src": "420:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -695,7 +695,7 @@
                     "referencedDeclaration": 5,
                     "src": "681:8:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_contract$_Project_$74_$dyn_storage",
+                      "typeIdentifier": "t_array$_t_contract$_Project_$130_$dyn_storage",
                       "typeString": "contract Project[] storage ref"
                     }
                   },
@@ -735,7 +735,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_contract$_Project_$74_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_contract$_Project_$130_$dyn_memory_ptr",
                     "typeString": "contract Project[] memory"
                   },
                   "typeName": {
@@ -744,10 +744,10 @@
                       "id": 46,
                       "name": "Project",
                       "nodeType": "UserDefinedTypeName",
-                      "referencedDeclaration": 74,
+                      "referencedDeclaration": 130,
                       "src": "652:7:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Project_$74",
+                        "typeIdentifier": "t_contract$_Project_$130",
                         "typeString": "contract Project"
                       }
                     },
@@ -756,7 +756,7 @@
                     "nodeType": "ArrayTypeName",
                     "src": "652:9:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_contract$_Project_$74_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_contract$_Project_$130_$dyn_storage_ptr",
                       "typeString": "contract Project[] storage pointer"
                     }
                   },
@@ -791,7 +791,7 @@
                         "referencedDeclaration": 55,
                         "src": "797:7:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Project_$74",
+                          "typeIdentifier": "t_contract$_Project_$130",
                           "typeString": "contract Project"
                         }
                       }
@@ -799,7 +799,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Project_$74",
+                          "typeIdentifier": "t_contract$_Project_$130",
                           "typeString": "contract Project"
                         }
                       ],
@@ -812,7 +812,7 @@
                         "referencedDeclaration": 5,
                         "src": "783:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_contract$_Project_$74_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_contract$_Project_$130_$dyn_storage",
                           "typeString": "contract Project[] storage ref"
                         }
                       },
@@ -826,7 +826,7 @@
                       "referencedDeclaration": null,
                       "src": "783:13:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_contract$_Project_$74_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_contract$_Project_$130_$returns$_t_uint256_$",
                         "typeString": "function (contract Project) returns (uint256)"
                       }
                     },
@@ -873,7 +873,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Project_$74",
+                    "typeIdentifier": "t_contract$_Project_$130",
                     "typeString": "contract Project"
                   },
                   "typeName": {
@@ -881,10 +881,10 @@
                     "id": 54,
                     "name": "Project",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 74,
+                    "referencedDeclaration": 130,
                     "src": "726:7:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Project_$74",
+                      "typeIdentifier": "t_contract$_Project_$130",
                       "typeString": "contract Project"
                     }
                   },
@@ -968,7 +968,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 68,
-        "sourceUnit": 75,
+        "sourceUnit": 131,
         "src": "28:23:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -996,7 +996,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_contract$_Project_$74_$dyn_storage",
+              "typeIdentifier": "t_array$_t_contract$_Project_$130_$dyn_storage",
               "typeString": "contract Project[] storage ref"
             },
             "typeName": {
@@ -1005,10 +1005,10 @@
                 "id": 3,
                 "name": "Project",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 74,
+                "referencedDeclaration": 130,
                 "src": "207:7:0",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_contract$_Project_$74",
+                  "typeIdentifier": "t_contract$_Project_$130",
                   "typeString": "contract Project"
                 }
               },
@@ -1017,7 +1017,7 @@
               "nodeType": "ArrayTypeName",
               "src": "207:9:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_contract$_Project_$74_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_contract$_Project_$130_$dyn_storage_ptr",
                 "typeString": "contract Project[] storage pointer"
               }
             },
@@ -1201,7 +1201,7 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 90,
+                      "referencedDeclaration": 146,
                       "src": "348:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1284,7 +1284,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 87,
+                        "referencedDeclaration": 143,
                         "src": "420:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -1524,7 +1524,7 @@
                     "referencedDeclaration": 5,
                     "src": "681:8:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_contract$_Project_$74_$dyn_storage",
+                      "typeIdentifier": "t_array$_t_contract$_Project_$130_$dyn_storage",
                       "typeString": "contract Project[] storage ref"
                     }
                   },
@@ -1564,7 +1564,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_contract$_Project_$74_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_contract$_Project_$130_$dyn_memory_ptr",
                     "typeString": "contract Project[] memory"
                   },
                   "typeName": {
@@ -1573,10 +1573,10 @@
                       "id": 46,
                       "name": "Project",
                       "nodeType": "UserDefinedTypeName",
-                      "referencedDeclaration": 74,
+                      "referencedDeclaration": 130,
                       "src": "652:7:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Project_$74",
+                        "typeIdentifier": "t_contract$_Project_$130",
                         "typeString": "contract Project"
                       }
                     },
@@ -1585,7 +1585,7 @@
                     "nodeType": "ArrayTypeName",
                     "src": "652:9:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_contract$_Project_$74_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_contract$_Project_$130_$dyn_storage_ptr",
                       "typeString": "contract Project[] storage pointer"
                     }
                   },
@@ -1620,7 +1620,7 @@
                         "referencedDeclaration": 55,
                         "src": "797:7:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Project_$74",
+                          "typeIdentifier": "t_contract$_Project_$130",
                           "typeString": "contract Project"
                         }
                       }
@@ -1628,7 +1628,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Project_$74",
+                          "typeIdentifier": "t_contract$_Project_$130",
                           "typeString": "contract Project"
                         }
                       ],
@@ -1641,7 +1641,7 @@
                         "referencedDeclaration": 5,
                         "src": "783:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_contract$_Project_$74_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_contract$_Project_$130_$dyn_storage",
                           "typeString": "contract Project[] storage ref"
                         }
                       },
@@ -1655,7 +1655,7 @@
                       "referencedDeclaration": null,
                       "src": "783:13:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_contract$_Project_$74_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_contract$_Project_$130_$returns$_t_uint256_$",
                         "typeString": "function (contract Project) returns (uint256)"
                       }
                     },
@@ -1702,7 +1702,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Project_$74",
+                    "typeIdentifier": "t_contract$_Project_$130",
                     "typeString": "contract Project"
                   },
                   "typeName": {
@@ -1710,10 +1710,10 @@
                     "id": 54,
                     "name": "Project",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 74,
+                    "referencedDeclaration": 130,
                     "src": "726:7:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Project_$74",
+                      "typeIdentifier": "t_contract$_Project_$130",
                       "typeString": "contract Project"
                     }
                   },
@@ -1776,5 +1776,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-04-14T06:33:03.613Z"
+  "updatedAt": "2018-04-14T08:12:43.945Z"
 }
