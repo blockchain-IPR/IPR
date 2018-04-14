@@ -90,13 +90,13 @@ App = {
         e.preventDefault()
         const form = $('#project')
         const searchParams = new URLSearchParams(window.location.search)
-        const project = {
-            name: form.find('#name').val(),
-            desc: form.find('#desc').val(),
-            parentId: searchParams.get('parent')
-        }
+        // const project = {
+        //     name: form.find('#name').val(),
+        //     desc: form.find('#desc').val(),
+        //     parentId: searchParams.get('parent')
+        // }
         App.contracts.IPR.deployed().then(function (instance) {
-            return instance.saveProject(project)
+            return instance.saveProject(searchParams.get('parent'), form.find('#name').val(), form.find('#desc').val())
         }).then(function (result) {
             return App.getProjects()
         }).catch(function (err) {
