@@ -54,9 +54,21 @@ App = {
     },
 
     markAdopted: function (adopters, account) {
-        /*
-         * Replace me...
-         */
+        let adoptionInstance
+        App.contracts.Adoption.deployed().then(function (instance) {
+            adoptionInstance = instance
+// 调用合约的getAdopters(), 用call读取信息不用消耗gas
+            return adoptionInstance.getAdopters.call()
+        }).then(function (adopters) {
+            for (i = 0; i < adopters.length; i++) {
+                if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
+                    $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true)
+                }
+            }
+        }).catch(function (err) {
+            console.log(err.message)
+        })
+
     },
 
     handleAdopt: function (event) {
