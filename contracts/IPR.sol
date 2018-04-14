@@ -1,14 +1,16 @@
 pragma solidity ^0.4.17;
 
-contract IPR {
-    struct Project {
-        string name;
-        string desc;
-        uint32 timestamp;
-    }
+import "./Project.sol";
 
-    Project[16] public projects;
-    address[16] public users;
+contract IPR {
+    //    struct Project {
+    //        string name;
+    //        string desc;
+    //        uint32 timestamp;
+    //    }
+
+    Project[] public projects;
+    address[] public users;
     // 分支
     function branch(uint projectId) public returns (uint) {
         require(projectId >= 0 && projectId <= 15);
@@ -16,14 +18,15 @@ contract IPR {
         return projectId;
     }
     // 返回用户
-    function getUsers() public view returns (address[16]) {
+    function getUsers() public view returns (address[]) {
         return users;
     }
     // 返回项目列表
-    function getProjects() public view returns (string) {
-        return '[]';
+    function getProjects() public view returns (Project[]) {
+        return projects;
     }
-    function saveProject(string project) public returns (uint) {
-        return 0;
+
+    function saveProject(Project project) public returns (uint) {
+        return projects.push(project);
     }
 }
