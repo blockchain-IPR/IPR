@@ -13,7 +13,8 @@ contract IPR {
     function branch(uint projectId) public returns (uint) {
         require(projectId >= 0 && projectId <= 15);
         users[projectId] = msg.sender;
-        return projectId;}
+        return projectId;
+    }
     // 返回用户
     function getUsers() public view returns (address[16]) {
         return users;
