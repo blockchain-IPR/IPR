@@ -1,4 +1,4 @@
-const Adoption = artifacts.require('Adoption')
+const IPR = artifacts.require('IPR')
 module.exports = function (deployer) {
-    deployer.deploy(Adoption)
+    deployer.deploy(IPR)
 }
