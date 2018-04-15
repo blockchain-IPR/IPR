@@ -3,22 +3,6 @@ App = {
     contracts: {},
 
     init: function () {
-        // Load pets.
-        $.getJSON('../pets.json', function (data) {
-            const petsRow = $('#petsRow')
-            const petTemplate = $('#petTemplate')
-
-            for (i = 0; i < data.length; i++) {
-                petTemplate.find('.panel-title').text(data[i].name)
-                petTemplate.find('img').attr('src', data[i].picture)
-                petTemplate.find('.pet-breed').text(data[i].breed)
-                petTemplate.find('.pet-age').text(data[i].age)
-                petTemplate.find('.pet-location').text(data[i].location)
-                petTemplate.find('.btn-adopt').attr('data-id', data[i].id)
-
-                petsRow.append(petTemplate.html())
-            }
-        })
         $('nav').load('nav.html')
         return App.initWeb3()
     },
@@ -56,6 +40,25 @@ App = {
 
     getProjects: function (adopters, account) {
         console.log('GetProject is not implement. TODO')//TODO
+        App.contracts.IPR.deployed().then(instance => {
+            instance.getProjectsLength().then(length => {
+                // Load pets.
+                const petsRow = $('#petsRow')
+                const petTemplate = $('#petTemplate')
+                for (let i = 0; i < length.c[0]; i++) {
+                    instance.projects.call(i).then(data => {
+                        petTemplate.find('.panel-title').text(data[1])
+                        petTemplate.find('img').attr('src', 'images/bussiness.jpg')
+                        petTemplate.find('.pet-breed').text(data[3])
+                        petTemplate.find('.pet-age').text(new Date(data[4].c[0] * 1000).toISOString())
+                        petTemplate.find('.desc').text(data[2])
+                        petTemplate.find('.btn-adopt').attr('data-id', data[i].id)
+
+                        petsRow.append(petTemplate.html())
+                    })
+                }
+            })
+        })
 //         let adoptionInstance
 //         App.contracts.Adoption.deployed().then(function (instance) {
 //             adoptionInstance = instance
@@ -98,7 +101,7 @@ App = {
         App.contracts.IPR.deployed().then(function (instance) {
             return instance.saveProject(searchParams.get('parent'), form.find('#name').val(), form.find('#desc').val())
         }).then(function (result) {
-            return App.getProjects()
+            location.href = '/'
         }).catch(function (err) {
             console.error(err)
         })
