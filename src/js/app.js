@@ -52,7 +52,7 @@ App = {
                         petTemplate.find('.pet-breed').text(data[3])
                         petTemplate.find('.pet-age').text(new Date(data[4].c[0] * 1000).toISOString())
                         petTemplate.find('.desc').text(data[2])
-                        petTemplate.find('.btn-adopt').attr('data-id', data[i].id)
+                        petTemplate.find('.btn-adopt').attr('data-id', new BigNumber(data[0].toString()).toString(16))
 
                         petsRow.append(petTemplate.html())
                     })
@@ -79,7 +79,7 @@ App = {
     handleBranch: function (event) {
         event.preventDefault()
 
-        const id = parseInt($(event.target).data('id'))
+        const id = $(event.target).data('id')
         location.href = `/edit.html?parent=${id}`
 // 获取用户账号
 //         web3.eth.getAccounts(function (error, accounts) {
@@ -101,7 +101,9 @@ App = {
         App.contracts.IPR.deployed().then(function (instance) {
             return instance.saveProject(searchParams.get('parent'), form.find('#name').val(), form.find('#desc').val())
         }).then(function (result) {
-            location.href = '/'
+        //     return result.getData()
+        // }).then(function (result) {
+            location.href = `/detail.html?id=${result}`
         }).catch(function (err) {
             console.error(err)
         })
